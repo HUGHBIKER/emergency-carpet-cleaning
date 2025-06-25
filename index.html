@@ -2,11 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Allserv Pro-Clean | Trusted Carpet Cleaning in Pasco County</title>
-  <meta name="description" content="Top-rated carpet cleaning with 45+ years of experience. Serving New Port Richey and beyond.">
-  <meta http-equiv="refresh" content="0; url=https://www.allserveproclean.com/">
+  <title>Redirecting to Hugh: Carpet Hero of Florida</title>
+  <meta name="description" content="Emergency carpet, tile, grout, and upholstery cleaning in Spring Hill, New Port Richey, and Tarpon Springs by Hugh at AllServ Pro Clean.">
+  <meta name="keywords" content="carpet cleaning, New Port Richey, Hugh, tile cleaning, emergency, Florida, upholstery, grout, pet stains, AllServ Pro Clean">
+  <meta http-equiv="refresh" content="4;url=https://www.allserveproclean.com/">
+  <meta name="robots" content="index, follow">
+  <style>
+    body { font-family: sans-serif; background: #f9f9f9; padding: 3em; text-align: center; }
+    h1 { color: #552200; }
+    p { font-size: 1.2em; }
+  </style>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const ref = document.referrer;
+    const q = params.get('q') || '';
+    let message = "Redirecting you to Hugh’s cleaning HQ…";
+
+    if (/pet|dog|cat/i.test(q)) {
+      message = "Redirecting to Hugh — Florida’s #1 Pet Stain Savior.";
+    } else if (/tile|grout/i.test(q)) {
+      message = "Redirecting to Hugh’s deep-clean tile miracles…";
+    } else if (/furniture|sofa|mattress/i.test(q)) {
+      message = "Redirecting to Hugh’s upholstery spa...";
+    } else if (/emergency|urgent|same day/i.test(q)) {
+      message = "HANG TIGHT! Emergency carpet rescue en route via Hugh.";
+    }
+
+    window.onload = () => {
+      document.getElementById("message").innerText = message;
+      // Optional: log this
+      fetch("https://httpbin.org/post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ referrer: ref, search: q, timestamp: new Date().toISOString() })
+      }).catch(console.warn);
+    };
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="https://www.allserveproclean.com/">https://www.allserveproclean.com/</a>...</p>
+  <h1>Calling Hugh…</h1>
+  <p id="message">Preparing redirect to AllServ Pro Clean…</p>
+  <p><em>Legendary results from Spring Hill to Tarpon Springs.</em></p>
 </body>
 </html>
