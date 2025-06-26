@@ -1,2 +1,18 @@
+
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><title>Monitor Ping</title></head><body><p>Ping received.</p></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitor</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const data = params.get("data");
+    if (data) {
+      console.log("Logged input:", data);
+    }
+  </script>
+  <p>Monitoring...</p>
+</body>
+</html>
