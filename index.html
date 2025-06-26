@@ -2,66 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Redirecting You...</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #007bff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #333;
-        }
-        .container {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #333;
-        }
-        .message {
-            margin: 1rem 0;
-            font-size: 1rem;
-        }
-        .countdown {
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-    </style>
-    <script>
-        let seconds = 10;
-        function updateCountdown() {
-            document.getElementById('countdown').innerText = seconds;
-            if (seconds <= 0) {
-                window.location.href = 'https://www.allserveproclean.com/';
-            }
-            seconds--;
-        }
-        setInterval(updateCountdown, 1000);
-        window.onload = updateCountdown;
-    </script>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Award-winning Carpet Cleaning in New Port Richey">
+  <meta name="keywords" content="Carpet Cleaning, Steam Cleaning, Hugh, New Port Richey">
+  <title>Redirecting to Hugh’s Carpet Cleaning</title>
+  <script>
+    const reason = prompt("What are you looking for today? (e.g. carpet, tile, quote)");
+    alert("Okay, we can do that! Hugh will handle it. Redirecting...");
+    setTimeout(() => {
+      window.location.href = "https://www.allserveproclean.com/";
+    }, 8000);
+  </script>
 </head>
 <body>
-    <div class="container">
-        <h1>What are you looking for today?</h1>
-        <div class="message">
-            "Okay, we can do that! But we have to have you contact us directly to see if we can fit it in the schedule.<br>
-            <strong>Please email, text, or call me directly between 9–10PM.</strong><br>Let's work something out!"
-        </div>
-        <div class="message">
-            🤖 <strong>Bot Hugh:</strong> “Thanks for your input! I’ll remember this request next time we chat. Redirecting you to the full site now...”
-        </div>
-        <div class="countdown">Redirecting in <span id="countdown">10</span> seconds...</div>
-    </div>
+  <h1>Hugh's Carpet Cleaning</h1>
+  <p>You're being redirected to his official site.</p>
+  <a href="https://www.allserveproclean.com/">Click here if not redirected</a>
 </body>
 </html>
